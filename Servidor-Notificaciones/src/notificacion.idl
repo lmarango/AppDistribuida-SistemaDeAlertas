@@ -1,0 +1,16 @@
+module sop_corba{
+    struct LecturaDTO{
+        string nombreZona;
+        string tiempoCaptura;
+        long temperatura;
+        long humedad;
+        long precipitacion;
+    };
+    typedef sequence<LecturaDTO> ArrayLecturas;
+    struct AlertaDTO{
+        ArrayLecturas listaLecturas;
+    };
+    interface GestionNotificacionesInt{
+        void enviarNorificacion(in AlertaDTO objAlerta);
+    };
+};

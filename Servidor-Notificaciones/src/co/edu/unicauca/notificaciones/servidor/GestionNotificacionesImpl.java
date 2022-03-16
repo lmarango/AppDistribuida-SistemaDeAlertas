@@ -2,7 +2,6 @@ package co.edu.unicauca.notificaciones.servidor;
 
 import s_gestrion_notificaciones.sop_corba.AlertaDTO;
 import s_gestrion_notificaciones.sop_corba.GestionNotificacionesIntPOA;
-import s_gestrion_notificaciones.sop_corba.LecturaDTO;
 
 /**
  *
@@ -25,6 +24,7 @@ public class GestionNotificacionesImpl extends GestionNotificacionesIntPOA{
             System.out.println("Temperatura: " + objAlerta.listaLecturas[i].temperatura + " C°");
             System.out.println("Humedad: " + objAlerta.listaLecturas[i].humedad + "%");
             System.out.println("Precipitación: " + objAlerta.listaLecturas[i].precipitacion + " ml");
+            System.out.println("");
         }
         System.out.println("\n----------------------------------\n");
     }

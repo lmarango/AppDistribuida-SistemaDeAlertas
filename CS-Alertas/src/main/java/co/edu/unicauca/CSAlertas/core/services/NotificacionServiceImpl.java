@@ -27,7 +27,7 @@ public class NotificacionServiceImpl implements INotificacionService{
             int dia = fecha.get(Calendar.DAY_OF_MONTH);
             int hora = fecha.get(Calendar.HOUR_OF_DAY);
             int minuto = fecha.get(Calendar.MINUTE);
-            String tiempoCaptura = dia + "/" + (mes+1) + "/" + anio + " " + hora + ":" + minuto;
+            String tiempoCaptura = dia + "/" + (mes+1) + "/" + anio + " " + (hora-5) + ":" + minuto;
             varLecturaTemp.tiempoCaptura = tiempoCaptura;
             varLecturaTemp.temperatura = prmLstLecturas.get(i).getTemperatura();
             varLecturaTemp.humedad = prmLstLecturas.get(i).getHumedad();

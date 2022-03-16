@@ -51,7 +51,7 @@ public class Menu {
             case 3 -> varZona = "Oriente";
             case 4 -> varZona = "Occidente";
         }
-        Calendar varFecha = new GregorianCalendar();
+        Calendar varFecha = GregorianCalendar.getInstance();
         Integer temperatura = 0;
         Integer varHumedad = 0;
         Integer varPrecipitacion;
